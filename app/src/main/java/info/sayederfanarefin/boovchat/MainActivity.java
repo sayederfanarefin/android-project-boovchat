@@ -4,13 +4,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    Button buttonSignIn;
+    Button buttonSignup;
+    EditText editTextEmail;
+    EditText editTextPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        buttonSignIn = (Button) findViewById(R.id.button_sign_in);
+        buttonSignup = (Button) findViewById(R.id.button_sign_up);
+        editTextEmail = (EditText) findViewById(R.id.editText_user_email);
+        editTextPassword = (EditText) findViewById(R.id.editText_user_password);
+
     }
 
     @Override
