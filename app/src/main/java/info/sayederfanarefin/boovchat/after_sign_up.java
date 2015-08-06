@@ -7,43 +7,27 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
-    Button buttonSignIn;
-    Button buttonSignup;
-    EditText editTextEmail;
-    EditText editTextPassword;
-
+public class after_sign_up extends AppCompatActivity {
+Button after_signup_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        buttonSignIn = (Button) findViewById(R.id.button_sign_in);
-        buttonSignup = (Button) findViewById(R.id.button_sign_up);
-        editTextEmail = (EditText) findViewById(R.id.editText_user_email);
-        editTextPassword = (EditText) findViewById(R.id.editText_user_password);
-        buttonSignIn.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_after_sign_up);
+        after_signup_button = (Button) findViewById(R.id.Sign_in_from_aftersignup);
+        after_signup_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-            }
-        });
-        buttonSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this, SignupActivity.class);
+                Intent myIntent = new Intent(after_sign_up.this, MainActivity.class);
                 startActivity(myIntent);
-
             }
         });
-
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_after_sign_up, menu);
         return true;
     }
 
