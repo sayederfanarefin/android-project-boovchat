@@ -1,8 +1,24 @@
 <resources>
-    <string name="app_name">boovchat</string>
+    <string name="app_name">boovchatv2</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_signup">SignupActivity</string>
-    <string name="title_activity_after_sign_up">after_sign_up</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_friends">Friends</string>
+    <string name="title_activity_chats">Chats</string>
+    <string name="title_activity_addfriend">addfriend</string>
+    <string name="title_activity_add_friend_unit">add_friend_unit</string>
+    <string name="title_activity_requests">requests</string>
+    <string name="title_activity_friend_req_unit">friend_req_unit</string>
+    <string name="title_activity_friends_display_unit">friends_display_unit</string>
+    <string name="title_activity_chat_sendmsg_fixed_to">chat_sendmsg_fixed_to</string>
+    <string name="title_activity_chatsss_show">chatsss_show</string>
+    <string name="title_activity_chat_window">Chat_window</string>
+    <string name="title_activity_chat_window_per_unit">chat_window_per_unit</string>
 </resources>

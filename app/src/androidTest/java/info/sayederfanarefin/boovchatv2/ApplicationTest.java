@@ -1,4 +1,4 @@
-package info.sayederfanarefin.boovchat;
+package info.sayederfanarefin.boovchatv2;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
