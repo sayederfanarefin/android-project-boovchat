@@ -41,8 +41,7 @@ ListView listView_myfriends_data;
         loading_friend_list.setVisibility(View.VISIBLE);
         try{
             mClient = new MobileServiceClient(
-                    "https://boovchat.azure-mobile.net/",
-                    "mlDOQRtfCWzENVjrROuNlehjtDCMse49",
+                     /*credentials from azure mobile services*/
                     this
             );
             friendsss_table = mClient.getTable(friendsss.class);
