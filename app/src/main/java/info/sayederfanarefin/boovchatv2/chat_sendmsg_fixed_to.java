@@ -41,8 +41,7 @@ String to, from;
         msg = (EditText)findViewById(R.id.editText_msg);
         try{
             mClient = new MobileServiceClient(
-                    "https://boovchat.azure-mobile.net/",
-                    "mlDOQRtfCWzENVjrROuNlehjtDCMse49",
+                     /*credentials from azure mobile services*/,
                     this
             );
             friend_table = mClient.getTable(friendrequests.class);
