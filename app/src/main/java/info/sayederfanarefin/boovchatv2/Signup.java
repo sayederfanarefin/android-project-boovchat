@@ -45,8 +45,7 @@ public class Signup extends AppCompatActivity {
         // Initialize the progress bar
         try{
             mClient = new MobileServiceClient(
-                    "https://boovchat.azure-mobile.net/",
-                    "mlDOQRtfCWzENVjrROuNlehjtDCMse49",
+                     /*credentials from azure mobile services*/,
                     this
             );
         }catch(java.net.MalformedURLException e){
