@@ -64,8 +64,7 @@ public class MainActivity extends TabActivity {
 
             try{
                 mClient = new MobileServiceClient(
-                        "https://boovchat.azure-mobile.net/",
-                        "mlDOQRtfCWzENVjrROuNlehjtDCMse49",
+                         /*credentials from azure mobile services*/,
                         this
                 );
 
