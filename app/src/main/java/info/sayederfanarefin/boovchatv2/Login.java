@@ -60,8 +60,7 @@ public class Login extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.editTextPasswordLogin);
         try{
             mClient = new MobileServiceClient(
-                    "https://boovchat.azure-mobile.net/",
-                    "mlDOQRtfCWzENVjrROuNlehjtDCMse49",
+                    /*credentials from azure mobile services*/,
                     this
             );
 
