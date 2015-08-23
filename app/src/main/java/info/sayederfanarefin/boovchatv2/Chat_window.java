@@ -52,8 +52,7 @@ Button send_msg;
         send_msg = (Button) findViewById(R.id.button_send_chat_window);
         try{
             mClient = new MobileServiceClient(
-                    "https://boovchat.azure-mobile.net/",
-                    "mlDOQRtfCWzENVjrROuNlehjtDCMse49",
+                /*credentials from azure mobile services*/
                     this
             );
             chats_table = mClient.getTable(chatss.class);
