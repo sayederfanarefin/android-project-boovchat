@@ -20,7 +20,7 @@ import com.microsoft.windowsazure.mobileservices.table.MobileServiceTable;
 import com.microsoft.windowsazure.notifications.NotificationsManager;
 //import com.google.android.gcm.GCMRegistrar;
 public class Chats extends AppCompatActivity {
-    public static final String SENDER_ID = "998039407263";
+    public static final String SENDER_ID = ""; //sender id
     ListView listView_chats_;
     public static MobileServiceClient mClient;
     MobileServiceTable<chatss> chatss_table;
@@ -39,8 +39,7 @@ public class Chats extends AppCompatActivity {
         loading_chats.setVisibility(View.VISIBLE);
         try{
             mClient = new MobileServiceClient(
-                    "https://boovchat.azure-mobile.net/",
-                    "mlDOQRtfCWzENVjrROuNlehjtDCMse49",
+                     /*credentials from azure mobile services*/
                     this
             );
             NotificationsManager.handleNotifications(this, SENDER_ID, MyHandler.class);
