@@ -51,8 +51,7 @@ Button search_for_friends;
          tv = (TextView) findViewById(R.id.textView3);
         try{
             mClient = new MobileServiceClient(
-                    "https://boovchat.azure-mobile.net/",
-                    "mlDOQRtfCWzENVjrROuNlehjtDCMse49",
+                     /*credentials from azure mobile services*/,
                     this
             );
 
